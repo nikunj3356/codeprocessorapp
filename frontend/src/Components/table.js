@@ -7,7 +7,7 @@ export default function Table() {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080").then((response) => {
+    axios.get("https://tuf-app.onrender.com").then((response) => {
       console.log(response);
       setCategory(response.data);
     });

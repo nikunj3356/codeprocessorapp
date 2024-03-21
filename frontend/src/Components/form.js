@@ -24,7 +24,7 @@ export default function Form() {
       stdin: submission.stdin,
       source_code: submission.source_code.substring(0, 100),
     };
-    axios.post(`http://localhost:8080/`, data).then((res) => {
+    axios.post("https://tuf-app.onrender.com", data).then((res) => {
       navigate("/submissions");
     });
   };
